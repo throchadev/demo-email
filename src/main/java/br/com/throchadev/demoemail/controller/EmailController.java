@@ -16,7 +16,7 @@ public class EmailController {
     @PostMapping(value = "/send")
     public String sendemail() {
 
-        emailService.sendMail("thiagoslipknot31@gmail.com", "Test Subject", "Test email");
+        emailService.sendMail("**@gmail.com", "Test Subject", "Test email");
 
         return "email-sent";
     }
